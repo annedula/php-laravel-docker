@@ -14,3 +14,7 @@ Route::patch('/tasks/{task}/toggle', [TaskController::class, 'toggle'])->name('t
 Route::get('/debug', function () {
     return phpinfo();
 });
+
+Route::get('/health', function () {
+    return 'App is running!';
+});
